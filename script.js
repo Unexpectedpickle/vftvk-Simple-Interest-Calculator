@@ -6,6 +6,7 @@ function compute()
     // Validate retrieved principal value
     if (invalid_principle(principal)) {
         alert("Enter a positive number");
+        document.getElementById("principal").focus();
         return;
     }
 
@@ -43,6 +44,6 @@ function update_error_message(element, text) {
 // Function to update value in slider for rate
 function updateRate() {
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerHTML=rateval;
+    document.getElementById("rate_val").innerHTML=rateval+"%";
 }
         
